@@ -1,0 +1,2 @@
+company_name|ticker
+Bank Mandiri|BMRI
