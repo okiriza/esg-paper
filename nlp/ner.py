@@ -27,3 +27,4 @@ def extract_company_mentions(text, df_company):
     json_mentions = [{'start': start, 'end': end, 'text': text, 'ticker': ticker} for start, end, text, ticker in company_mentions]
 
     return json_mentions
+  
