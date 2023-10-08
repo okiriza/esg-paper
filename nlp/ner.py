@@ -4,7 +4,9 @@ import pandas as pd
 def extract_company_mentions(text, df_company):
     company_mentions = []
     for _, row in df_company.iterrows():
-        company_name = row['Company Name'][:-1] # delete dot from the end of Tbk.
+        company_name = row['Company Name']
+        if company_name.endswith('Tbk.'):
+            company_name = company_name[:-1] # delete dot from the end of Tbk.
         ticker = row['Code']
         
         # Regular expression pattern to match the company name in the text (case-insensitive)
