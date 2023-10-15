@@ -1,7 +1,10 @@
 import re
 import pandas as pd
 
-def extract_company_mentions(text, df_company):
+def extract_company_mentions(text, df_company=None):
+    if df_company is None:
+        df_company = pd.read_csv("IDX_StockList_20230907.csv")
+        
     company_mentions = []
     for _, row in df_company.iterrows():
         company_name = row['Company Name']
