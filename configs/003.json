@@ -1,0 +1,15 @@
+{
+    "data_paths": [
+        "data/news/kontan/kontan_environment_similarity_company_mentioned.parquet"
+    ],
+    "n_pre": 66,
+    "n_post": 5,
+    "normalize": "1_mean",
+    "causalimpact": {
+        "model": {
+            "standardize.data": false,
+            "nseasons": 1,
+            "season.duration": 1
+        }
+    }
+}
