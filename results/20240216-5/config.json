@@ -2,7 +2,7 @@
     "data_paths": [
         "data/news/kontan/20240218_kontan_env_sim_company_mentioned.parquet"
     ],
-    "dummy" false,
+    "dummy": false,
     "controls": [
         "sectoral_price",
         "sectoral_return",
